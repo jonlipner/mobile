@@ -31,6 +31,13 @@
 	background-color: orange;
 }
 
+.nav button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	background-color: orange;
+}
+
 .toggle {
 	display: block;
 }
