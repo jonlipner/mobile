@@ -3,9 +3,35 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" type="text/css" href="mobile.css">
 		<title>Sitio Mobile</title>
 	</head>
 	<body>
 		<h1>Sitio mobile</h1>
+
+		<ul class="nav-desktop">
+			<li><a href="#">Botón 1</a></li>
+			<li><a href="#">Botón 2</a></li>
+			<li><a href="#">Botón 3</a></li>
+		</ul>
+		
+		<div class="nav">
+			<button id="boton">Toggle</button>
+			<ul class="nav-mobile" id="menu">
+				<li><a href="#">Botón 1</a></li>
+				<li><a href="#">Botón 2</a></li>
+				<li><a href="#">Botón 3</a></li>
+			</ul>
+		</div>	
+
+		<script>
+			boton.addEventListener (
+				"click", function() {
+					//alert("Hiciste click");
+
+					menu.classList.toggle("toggle");
+				}
+			);
+		</script>
 	</body>
 </html>
